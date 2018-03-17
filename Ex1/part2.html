@@ -32,12 +32,11 @@
       var x = document.getElementById('origin').value;
       var latlngStr1 = x.split(',', 2);
       var latlng1 = {lat: parseFloat(latlngStr1[0]), lng: parseFloat(latlngStr1[1])};
-      var ruler1 = new google.maps.LatLng(latlng1.lat,latlng1.lng);
 
       var y = document.getElementById('destination').value;
       var latlngStr2 = y.split(',', 2);
       var latlng2 = {lat: parseFloat(latlngStr2[0]), lng: parseFloat(latlngStr2[1])};
-      var ruler2 = new google.maps.LatLng(latlng2.lat,latlng2.lng);
+
 
       $('#result').html("Khoang cach giua A va B la: " + distance( latlng1.lat, latlng1.lng, latlng2.lat, latlng2.lng));
     }
